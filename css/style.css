@@ -1,0 +1,279 @@
+@font-face {
+	font-family: "Hun Din";
+	src: url('../fonts/HunDIN1451.ttf');
+}
+* {
+	max-width: 400px;
+	max-height: 461px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	width: 400px;
+	height: 461px;
+	box-sizing: border-box;
+}
+.overlay {
+	overflow: hidden;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .9);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.accueil {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.header {
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	cursor: pointer;
+}
+.header:hover .title {
+	color: #FFF;
+	filter: brightness(130%);
+}
+.header .title:hover  {
+	color: #FFF;
+	filter: brightness(130%);
+}
+.title {
+	filter: brightness(90%);
+	margin-top: 4rem;
+	margin-left: .6rem;
+	margin-right: .6rem;
+	font-family: 'Hun Din', cursive;
+	color: #FFFFFF;
+	text-shadow: 0 4px 2px rgba(0, 0, 0, .55),
+	.9px .9px 0 #5a1a19,
+    -.9px .9px 0 #5a1a19,
+    .9px -.9px 0 #5a1a19,
+    -.9px -.9px 0 #5a1a19,
+    0px .9px 0 #5a1a19,
+    0px -.9px 0 #5a1a19,
+    -.9px 0px 0 #5a1a19,
+    .9px 0px 0 #5a1a19,
+    1.5px 1.5px 0 #5a1a19,
+    -1.5px 1.5px 0 #5a1a19,
+    1.5px -1.5px 0 #5a1a19,
+    -1.5px -1.5px 0 #5a1a19,
+    0px 1.5px 0 #5a1a19,
+    0px -1.5px 0 #5a1a19,
+    -1.5px 0px 0 #5a1a19,
+    1.5px 0px 0 #5a1a19,
+    .9px 1.5px 0 #5a1a19,
+    -.9px 1.5px 0 #5a1a19,
+    .9px -1.5px 0 #5a1a19,
+    -.9px -1.5px 0 #5a1a19,
+    1.5px .9px 0 #5a1a19,
+    -1.5px .9px 0 #5a1a19,
+    1.5px -.9px 0 #5a1a19,
+    -1.5px -.9px 0 #5a1a19;
+	font-size: 4.7rem;
+	font-weight: lighter;
+	font-stretch: ultra-condensed;
+}
+.title.big {
+	font-size: 6.2rem;
+	margin-top: 5.2rem;
+}
+.off-status {
+	cursor: pointer;
+	margin-left: .1rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	background-color: #232323;
+	border-radius: 50%;
+}
+.off-status.hidden {
+	display: none;
+}
+
+.socials {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	bottom: -.7rem;
+	left: .4rem;
+	width: 40%;
+	height: 80%;
+	align-items: center;
+	justify-content: center;
+}
+.socials.small {
+	height: 40%;
+	bottom: 30%;
+	top: 21%;
+}
+.socials.small a {
+	height: 14%;
+}
+
+.socials.small a img {
+	width: 95px;
+	height: 95px;
+	margin-top: -.6rem;
+	margin-left: .2rem;
+}
+.socials>a {
+	width: 80%;
+	height: 34%;
+}
+.socials a img {
+	cursor: pointer;
+	width: 140px;
+	height: 140px;
+	position: relative;
+	flex-direction: column;
+	margin: -.8rem -.2rem;
+	z-index: 1;
+	filter: brightness(90%);
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .55));
+}
+.socials img:hover {
+	filter: brightness(130%);
+}
+
+.footer {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 30%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.footer.hidden .onlive h2,
+.footer.hidden .game h2,
+.footer.hidden .onlive .on-status {
+	display: none;
+}
+.onlive {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 50%;
+	width: 40%;
+	cursor: pointer;
+}
+.onlive .on-status {
+	margin-left: 1rem;
+
+}
+.onlive h2 {
+	filter: brightness(90%);
+	margin-top: 2.8rem;
+	font-family: 'Hun Din', cursive;
+	color: #FFFFFF;
+	text-shadow: 0 4px 2px rgba(0, 0, 0, .55),
+	.9px .9px 0 #5a1a19,
+    -.9px .9px 0 #5a1a19,
+    .9px -.9px 0 #5a1a19,
+    -.9px -.9px 0 #5a1a19,
+    0px .9px 0 #5a1a19,
+    0px -.9px 0 #5a1a19,
+    -.9px 0px 0 #5a1a19,
+    .9px 0px 0 #5a1a19,
+    1.5px 1.5px 0 #5a1a19,
+    -1.5px 1.5px 0 #5a1a19,
+    1.5px -1.5px 0 #5a1a19,
+    -1.5px -1.5px 0 #5a1a19,
+    0px 1.5px 0 #5a1a19,
+    0px -1.5px 0 #5a1a19,
+    -1.5px 0px 0 #5a1a19,
+    1.5px 0px 0 #5a1a19,
+    .9px 1.5px 0 #5a1a19,
+    -.9px 1.5px 0 #5a1a19,
+    .9px -1.5px 0 #5a1a19,
+    -.9px -1.5px 0 #5a1a19,
+    1.5px .9px 0 #5a1a19,
+    -1.5px .9px 0 #5a1a19,
+    1.5px -.9px 0 #5a1a19,
+    -1.5px -.9px 0 #5a1a19;
+	font-size: 2.8rem;
+	font-weight: lighter;
+	font-stretch: ultra-condensed;
+}
+.onlive:hover h2 {
+	filter: brightness(120%);
+}
+.on-status {
+	height: 2.5rem;
+	width: 2.5rem;
+	background-color: red;
+	border-radius: 50%;
+	animation: neon .6s ease-in-out infinite alternate;
+
+}
+@keyframes neon {
+  from {
+	opacity: 1;
+  }
+  to {
+  	opacity: 0.7;
+  }
+}
+
+.game h2 {
+	width: auto;
+	cursor: pointer;
+	letter-spacing: -0.2rem;
+	word-spacing: .5rem;
+	filter: brightness(90%);
+	margin: .4rem 1rem;
+	font-family: 'Hun Din', cursive;
+	color: #FFFFFF;
+	text-shadow: 0 4px 2px rgba(0, 0, 0, .55),
+	.9px .9px 0 #5a1a19,
+    -.9px .9px 0 #5a1a19,
+    .9px -.9px 0 #5a1a19,
+    -.9px -.9px 0 #5a1a19,
+    0px .9px 0 #5a1a19,
+    0px -.9px 0 #5a1a19,
+    -.9px 0px 0 #5a1a19,
+    .9px 0px 0 #5a1a19,
+    1.5px 1.5px 0 #5a1a19,
+    -1.5px 1.5px 0 #5a1a19,
+    1.5px -1.5px 0 #5a1a19,
+    -1.5px -1.5px 0 #5a1a19,
+    0px 1.5px 0 #5a1a19,
+    0px -1.5px 0 #5a1a19,
+    -1.5px 0px 0 #5a1a19,
+    1.5px 0px 0 #5a1a19,
+    .9px 1.5px 0 #5a1a19,
+    -.9px 1.5px 0 #5a1a19,
+    .9px -1.5px 0 #5a1a19,
+    -.9px -1.5px 0 #5a1a19,
+    1.5px .9px 0 #5a1a19,
+    -1.5px .9px 0 #5a1a19,
+    1.5px -.9px 0 #5a1a19,
+    -1.5px -.9px 0 #5a1a19;
+	font-size: 2.5rem;
+	font-weight: lighter;
+	font-stretch: ultra-condensed;
+}
+.game h2:hover {
+	filter: brightness(130%);
+}

@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "KAO Live",
+	"description": "Ne loupez plus un seul live Twitch de Kao.",
+	"version": "1.0.2",
+	"author": "Gwyomarch",
+	"permissions": [
+		"notifications"
+	],
+	"icons": {
+		"64": "img/logo-64.png",
+		"128": "img/logo-128.png",
+		"256": "img/logo-256.png"
+	},
+	"browser_action": {
+		"default_icon": "img/logo-256.png",
+		"default_popup": "index.html"
+	},
+	"background": {
+		"scripts": ["js/jquery.js", "js/config.js", "js/background.js"],
+		"persistent": true
+	}
+}
