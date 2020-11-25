@@ -5,7 +5,5 @@ const config = {
 	"youtube": "Kaoreplay",
 	"twitter": "kao_svmd",
 	"instagram": "kaosvmd",
-	"merch": "https://merch.streamelements.com/kaosvmd/",
-	"discord": "",
 	"author": "Gwyomarch"
 }

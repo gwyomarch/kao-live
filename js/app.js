@@ -41,6 +41,7 @@ window.onload = () => {
 		chrome.tabs.create({ url: "https://www.twitch.tv/" + streamer })
 	})
 }
+
 async function stream() {
 	xhr.open("GET", "https://api.twitch.tv/helix/streams?user_login=" + streamer, true)
 	xhr.setRequestHeader("Authorization", "Bearer " + token)

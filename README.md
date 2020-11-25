@@ -5,7 +5,7 @@
 <a href="https://microsoftedge.microsoft.com/addons/detail/kao-live/gmebkjgfidjaibadakpalcjleccngged" target="_blank" title="Kao Live Edge"><img src="https://imgur.com/vMcaXaw.png" width="64" height="64"></a>
 <a href="https://addons.opera.com/fr/extensions/details/kao-live/" target="_blank" title="Kao Live Opera"><img src="https://imgur.com/nSJ9htU.png" width="64" height="64"></a>
 
-Kao Live extension is written in Javascript and uses Jquery.
+Kao Live extension is written in Javascript, HTML, CSS and uses Jquery.
 
 ![](https://addons.cdn.mozilla.net/user-media/previews/full/247/247745.png?modified=1605718596 "Kao Live")
 
@@ -13,12 +13,12 @@ Kao Live extension is written in Javascript and uses Jquery.
 
 **Requirements**
 - Chrome (preferred), Opera, Firefox or Edge browser
-- Twitch API Client Id & Token
+- Twitch [API Client Id & Token](https://dev.twitch.tv/)
 
 
 **Run the extension**
 
-Put your [API token](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth) in config.js file
+Put your [API token](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-client-credentials-flow) in config.js file
 ```
 	...
 	"clientId": "[PUT YOUR OWN TWITCH CLIENT ID HERE]",
@@ -28,10 +28,11 @@ Put your [API token](https://dev.twitch.tv/docs/authentication/getting-tokens-oa
 
 You can now load the extension into your browser through the browser's extension tools page:
 
-- Chrome/Opera:
+ - Chrome/Opera:
   1. Type `chrome://extensions` in your address bar to bring up the extensions page.
   2. Enable developer mode (checkbox)
   3. Click the "Load unpacked extension" button, navigate to the root folder of your local extension instance, and click "Ok".
-  - Firefox
+
+ - Firefox:
   1. Type `about:debugging` in your address bar to bring up the add-ons page.
   2. Click the `Load Temporary Add-on` button, navigate to the `manifest.json` file, and "Open".
