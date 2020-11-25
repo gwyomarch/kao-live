@@ -13,12 +13,12 @@ Kao Live extension is written in Javascript, HTML, CSS and uses Jquery.
 
 **Requirements**
 - Chrome (preferred), Opera, Firefox or Edge browser
-- Twitch [API Client Id & Token](https://dev.twitch.tv/){:target="_blank"}
+- Twitch [API Client Id & Token](https://dev.twitch.tv/)
 
 
 **Run the extension**
 
-Put your [API token](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-client-credentials-flow){:target="_blank"} in config.js file
+Put your [API token](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-client-credentials-flow) in config.js file
 ```
 	...
 	"clientId": "[PUT YOUR OWN TWITCH CLIENT ID HERE]",
