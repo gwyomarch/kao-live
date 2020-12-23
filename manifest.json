@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "KAO Live",
 	"description": "Ne loupez plus un seul live Twitch de Kao.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "Gwyomarch",
 	"permissions": [
 		"notifications"
