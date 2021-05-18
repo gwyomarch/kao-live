@@ -17,14 +17,10 @@ async function stream() {
 		if(xhr.readyState === 4) {
 			const response = JSON.parse(xhr.responseText)
 			if(response["data"] == 0) {
-
-			//	STREAM OFFLINE
 				chrome.browserAction.setIcon({path: "img/logo-128-nb.png"})
 				check = 0
 			} else {
 				if (check === 0) {
-
-			//	STREAM ONLINE
 					chrome.browserAction.setIcon({path: "img/logo-128.png"})
 					Notification.requestPermission(() => {
 						if(Notification.permission === "default"){

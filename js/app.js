@@ -14,7 +14,6 @@ stream()
 setInterval(function(){
 	stream()
 }, 60000)
-
 window.onload = () => {
 	const twit = document.getElementById('twit')
 	twit.addEventListener('click', () => {
@@ -41,7 +40,6 @@ window.onload = () => {
 		chrome.tabs.create({ url: "https://www.twitch.tv/" + streamer })
 	})
 }
-
 async function stream() {
 	xhr.open("GET", "https://api.twitch.tv/helix/streams?user_login=" + streamer, true)
 	xhr.setRequestHeader("Authorization", "Bearer " + token)
@@ -70,6 +68,7 @@ async function stream() {
 					$('#off-status').addClass("hidden")
 					$('#socials').addClass("small")
 					$('#footer').removeClass('hidden')
+					console.log(response['data'][0])
 					let game = response['data'][0].game_name
 					if(game.length > 24) {
 						game = game.substring(0, 25)
